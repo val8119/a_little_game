@@ -11,104 +11,83 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: rgb(238, 174, 202);
-    background: linear-gradient(135deg, #aeeedb 0%, #94bbe9 100%);
+    background: #24303d;
+    background: linear-gradient(135deg, #2c2c2c 0%, #24303d 100%);
 }
 
-.input-cont input {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    width: 200px;
-    border-radius: 15px;
-    border-width: 1px;
-    height: 20px;
-    border-color: transparent;
-    background-color: #ffffff;
-    text-align: center;
-}
-
-.input-cont input:focus {
-    outline: none;
-}
-
-.input-cont button {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-    height: 24px;
-    text-align: center;
-    border-radius: 20px;
-    border-width: 1px;
-    border-color: transparent;
-    background-color: #6fdd90;
-    transition: ease 0.2s;
-}
-
-.input-cont button:hover {
-    background-color: #67cf86;
-}
-
-.input-cont button:active {
-    position: relative;
-    top: 1px;
-}
-
-.input-cont button:focus {
-    outline: none;
-}
-
-.container {
-    width: 600px;
-    height: 600px;
-    background-color: transparent;
-    margin: 10vh auto auto auto;
-}
-
-.input-cont {
-    text-align: center;
-}
-
-.list-cont {
+.cont {
     margin: auto;
+    width: 60vw;
+    height: 30vh;
+    margin-top: 25vh;
+    text-align: center;
 }
 
-.list-item {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    background-color: #f2feff;
+.cont h1 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+.cont button {
+    color: aliceblue;
+    text-align: center;
     border-width: 1px;
     border-style: none;
-    border-radius: 7px;
-    margin-bottom: 10px;
-    display: table;
-    width: 500px;
-    height: 35px;
-}
-
-.list-item button {
-    float: right;
-    margin: 8px 8px 0px 0px;
     border-radius: 5px;
-    border-width: 1px;
-    border-color: transparent;
-    background-color: rgb(184, 50, 50);
-    box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0);
-    color: white;
+    margin: 0 10px 0 10px;
+    height: 25px;
+    width: 50px;
     transition: ease 0.2s;
 }
 
-.list-item button:hover {
-    box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 0.75);
-    background-color: rgb(173, 45, 45);
+/* NORMAL BUTTON */
+
+.normal-button {
+    color: aliceblue;
+    text-align: center;
+    border-width: 1px;
+    border-style: none;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    height: 25px;
+    width: 50px;
+    transition: ease 0.2s;
+    background-color: rgb(20, 21, 32);
 }
 
-.list-item button:active {
+.normal-button:hover {
+    background-color: rgb(12, 12, 19);
+    box-shadow: 0px 0px 10px 0px rgba(20, 21, 32, 0.5);
+}
+
+/* GREEN BUTTON */
+
+.green-button {
+    background-color: rgb(16, 180, 24);
+}
+
+.green-button:hover {
+    background-color: rgb(14, 160, 21);
+    box-shadow: 0px 0px 10px 0px rgba(14, 160, 21, 0.5);
+}
+
+/* RED BUTTON */
+
+.red-button {
+    background-color: rgb(180, 16, 16);
+}
+
+.red-button:hover {
+    background-color: rgb(180, 16, 16);
+    box-shadow: 0px 0px 10px 0px rgba(180, 16, 16, 0.8);
+}
+
+.cont button:active {
     position: relative;
     top: 1px;
 }
 
-.list-item button:focus {
+.cont button:focus {
     outline: none;
-}
-
-li {
-    display: table-cell;
-    vertical-align: middle;
-    padding-left: 10px;
 }
