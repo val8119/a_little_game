@@ -50,12 +50,16 @@ function game() {
         document.getElementById("YES").addEventListener("click", function () {
             document.getElementById("YES").remove();
             document.getElementById("NO").remove();
-            contMessage.innerHTML = "Bad luck. The phone doesn't work. Ok. Let's move on. You move towards the other end of the room. There are two doors again.";
+            contMessage.innerHTML = "Bad luck. The phone doesn't work." + "<br />" + " Ok. Let's move on. You move towards the other end of the room. There are two doors again.";
+            createButton("LEFT", "normal");
+            createButton("RIGHT", "normal");
         });
         document.getElementById("NO").addEventListener("click", function () {
             document.getElementById("YES").remove();
             document.getElementById("NO").remove();
             contMessage.innerHTML = "Ok. Let's move on. You move towards the other end of the room. There are two doors again.";
+            createButton("LEFT", "normal");
+            createButton("RIGHT", "normal");
         });
     });
 }
