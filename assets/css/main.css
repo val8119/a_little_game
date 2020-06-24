@@ -35,24 +35,14 @@ body {
     border-width: 1px;
     border-style: none;
     border-radius: 5px;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 20px 10px;
     height: 25px;
-    width: 50px;
     transition: ease 0.2s;
 }
 
 /* NORMAL BUTTON */
 
 .normal-button {
-    color: aliceblue;
-    text-align: center;
-    border-width: 1px;
-    border-style: none;
-    border-radius: 5px;
-    margin: 0 10px 0 10px;
-    height: 25px;
-    width: 50px;
-    transition: ease 0.2s;
     background-color: rgb(20, 21, 32);
 }
 
